@@ -14,7 +14,7 @@ for record in SeqIO.parse(args.fasta, "fasta"):
     if len(record.seq) > args.minLength:
         long_sequences.append(record)
 
-outfile = args.fasta.split(".fasta")[0] + "_contigs_more_than_10mb.fasta"       
+outfile = args.fasta.split(".fasta")[0] + "_records_longer_than_" + str(args.maxLength) + ".fasta"
 
 SeqIO.write(long_sequences, outfile, "fasta")
 
