@@ -28,7 +28,7 @@ If this script is useful to you, please cite the following in your publication:
 @software{Seqer,
   author = {Sim, Sheina B.},
   title = {Seqer},
-  url = {https://github.com/sheinasim/Seqer}
+  url = {https://github.com/sheinasim/seqer}
 }
 ```
 
