@@ -6,6 +6,7 @@ from Bio import SeqIO
 parser = argparse.ArgumentParser()
 parser.add_argument("minLength", type=int, help="Miniimum length contig retained")
 parser.add_argument("fasta", help=".fasta to get sequences from")
+parser.add_argument("-v", "--version", help="Print version.", action="version", version="v1.2")
 args = parser.parse_args()
 
 long_sequences = []
